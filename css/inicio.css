@@ -1,0 +1,52 @@
+.contenedor {
+    position: relative;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    border-radius: 15px;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2DE465;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.contenedor:hover .overlay {
+    width: 100%;
+}
+
+.texto {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
