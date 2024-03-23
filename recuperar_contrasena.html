@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_bs/bootstrap.min.css">
+    <title>Plantasia Store</title>
+</head>
+<body>
+    <!-- Barra de navegaciónn -->
+    <nav class="navbar navbar-expand-lg w-100" style="border-bottom: 1px solid gainsboro;">
+        <div class="container-fluid">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/Plantasia store.png" style="height: 50px" />
+            </a>
+            <!-- Boton para abrir y cerrar barra de navegación  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="w-100 navbar-nav mb-2 mb-lg-0 d-flex justify-content-end pe-lg-5">
+                    <!-- Categorias -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link active text-black text-center" aria-current="page"
+                            href="categorias.html">Categorías</a>
+                    </li>
+                    <!-- Registro de usuario -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link text-black text-center" href="registro_usuario.html">Registro</a>
+                    </li>
+                    <!-- Iniciar sesion -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link text-black text-center" href="iniciar_sesion.html">Iniciar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Titulo -->
+    <div class="row w-100 d-flex mt-5 mb-3">
+        <div class="m-auto col-9">
+            <h2 id="categorias">Recuperar contraseña</h2>
+    </div>
+
+    <!-- Formulario Inicio sesion -->
+    <div class="row w-100 d-flex needs-validation" novalidate>
+        <form class="col-10 col-md-8 border m-auto" action="" method="POST" id="formRegistro">
+            <fieldset>
+                <legend>Ingresa tu correo:</legend>
+                <!-- Nombre de usuario -->
+                <div class="mb-3">
+                    <label for="nombre_usuario" class="form-label">Nombre de usuario:</label>
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" class="form-control"
+                        placeholder="Nombre de usuario" required>
+                </div>
+                <!-- Correo -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo" required>
+                </div>
+                <!-- Botones -->
+                <div id="liveAlertPlaceholder"></div>
+                <button type="button" class="btn btn-primary" id="liveAlertBtn">Solicitar contraseña nueva</button>
+                <p class="warning" id="warnings"></p>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-3 mt-5" style="border-top: 1px solid gainsboro;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">RRSS</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">© Plantasia Store, Inc</p>
+    </footer>
+
+
+    <script src="js_bs/bootstrap.min.js"></script>
+    <script src="js/alert_recuperar_contrasena.js"></script>
+</body>
+</html>

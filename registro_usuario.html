@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_bs/bootstrap.min.css">
+    <title>Plantasia Store</title>
+</head>
+
+<body>
+    <!-- Barra de navegaciónn -->
+    <nav class="navbar navbar-expand-lg w-100" style="border-bottom: 1px solid gainsboro;">
+        <div class="container-fluid">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/Plantasia store.png" style="height: 50px" />
+            </a>
+            <!-- Boton para abrir y cerrar barra de navegación  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="w-100 navbar-nav mb-2 mb-lg-0 d-flex justify-content-end pe-lg-5">
+                    <!-- Categorias -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link active text-black text-center" aria-current="page"
+                            href="categorias.html">Categorías</a>
+                    </li>
+                    <!-- Registro de usuario -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link text-black text-center" href="registro_usuario.html">Registro</a>
+                    </li>
+                    <!-- Iniciar sesion -->
+                    <li class="nav-item col-12 col-lg-2">
+                        <a class="nav-link text-black text-center" href="iniciar_sesion.html">Iniciar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Titulo -->
+    <div class="row w-100 d-flex mt-5 mb-3">
+        <div class="m-auto col-9">
+            <h2 id="categorias">Formulario</h2>
+        </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="row w-100 d-flex needs-validation" novalidate>
+        <form class="col-10 col-md-8 border m-auto" action="" method="POST" id="formRegistro">
+            <fieldset>
+                <legend>Registro de usuario</legend>
+                <!-- Nombre y apellido -->
+                <div class="mb-3">
+                    <label for="nombre_completo" class="form-label">Nombre y apellido:</label>
+                    <input type="text" name="nombre_completo" id="nombre_completo" class="form-control"
+                        placeholder="Nombre y apellido" required>
+                </div>
+                <!-- Nombre de usuario -->
+                <div class="mb-3">
+                    <label for="nombre_usuario" class="form-label">Nombre de usuario:</label>
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" class="form-control"
+                        placeholder="Nombre de usuario" required>
+                </div>
+                <!-- Correo -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo" required>
+                </div>
+                <!-- Contraseña -->
+                <div class="mb-3">
+                    <label for="pass1" class="form-label ">Contraseña:</label>
+                    <input type="password" name="pass1" id="pass1" class="form-control is-invalid"
+                        placeholder="Constraseña" required>
+                    <div class="invalid-feedback">
+                        Contraseña debe ser entre 6 y 18 carácteres, con al menos una mayúscula y un número.
+                    </div>
+                </div>
+                <!-- Repetir contraseña -->
+                <div class="mb-3">
+                    <label for="pass2" class="form-label ">Repetir contraseña:</label>
+                    <input type="password" name="pass2" id="pass2" class="form-control is-invalid"
+                        placeholder="Repetir constraseña" required>
+                    <div class="invalid-feedback">
+                        Contraseñas deben ser iguales.
+                    </div>
+                </div>
+                <!-- Fecha de nacimiento -->
+                <div class="mb-3">
+                    <label for="fecha_nac" class="form-label">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha_nac" id="fecha_nac" class="form-control"
+                        placeholder="Fecha de nacimiento" required>
+                </div>
+                <!-- Dirección de despacho -->
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección de despacho:</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control"
+                        placeholder="Dirección de despacho">
+                </div>
+                <!-- Botones -->
+                <button type="submit" disabled id="Enviar" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
+                <p class="warning" id="warnings"></p>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-3 mt-5" style="border-top: 1px solid gainsboro;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="#">RRSS</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">© Plantasia Store, Inc</p>
+    </footer>
+
+    <!-- JS  -->
+
+    <script src="js/formulario.js"></script>
+    <script src="js/validarPassword.js"></script>
+    <script src="js_bs/bootstrap.min.js"></script>
+    <script src="js/validarFecha.js"></script>
+</body>
+
+</html>
